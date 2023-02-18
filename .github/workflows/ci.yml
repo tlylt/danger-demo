@@ -1,6 +1,6 @@
 name: 'Danger JS'
 
-on: pull_request
+on: workflow_dispatch
 
 permissions:
   actions: write

@@ -1,0 +1,23 @@
+{
+  "name": "danger-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dangerfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tlylt/danger-demo.git"
+  },
+  "keywords": [],
+  "author": "tlylt <liu_yongliang@hotmail.com> (https://github.com/tlylt)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tlylt/danger-demo/issues"
+  },
+  "homepage": "https://github.com/tlylt/danger-demo#readme",
+  "devDependencies": {
+    "danger": "^11.2.3"
+  }
+}

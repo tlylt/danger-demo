@@ -1,6 +1,6 @@
-name: 'Danger TS'
+name: 'Danger Dev'
 
-on: workflow_dispatch
+on: pull_request
 
 permissions:
   actions: write
@@ -16,9 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
-        with:
-          node-version: 14
-      - name: 'Use npx to run the dangerfile'
-        run: 'npx danger-ts --verbose'
+      - run: npm install
+      - run: danger ci
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
