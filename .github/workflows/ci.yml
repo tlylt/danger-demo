@@ -1,4 +1,4 @@
-name: "Danger JS"
+name: 'Danger JS'
 
 on: pull_request
 
