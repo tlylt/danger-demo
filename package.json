@@ -4,7 +4,7 @@
   "description": "",
   "main": "dangerfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "danger": "danger ci"
   },
   "repository": {
     "type": "git",
