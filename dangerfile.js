@@ -7,3 +7,9 @@ const commitMessageRegex = /\*\*Proposed commit message: \(wrap lines at 72 char
 if (commitMessageRegex.test(pr.body)) {
   warn(`Maybe fill in the issue description (especially the proposed commit message)?`);
 }
+
+// Missing test
+const filePaths = danger.git.created_files.concat(danger.git.modified_files);
+if (filePaths.filter(filepath => filepath.includes('test')).length === 0) {
+  warn(`Maybe add some tests?`);
+}
