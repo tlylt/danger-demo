@@ -13,3 +13,11 @@ const filePaths = danger.git.created_files.concat(danger.git.modified_files);
 if (filePaths.filter(filepath => filepath.includes('test')).length === 0) {
   warn(`Maybe add some tests?`);
 }
+
+// Celebrate documentation 
+const documentation = danger.git.fileMatch('**/*.md');
+if (documentation.edited) {
+  message(
+    'Thank you for making our documentation better!'
+  );
+}
