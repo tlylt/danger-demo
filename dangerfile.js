@@ -23,7 +23,7 @@ if (documentation.edited) {
 }
 
 // Welcome new contributors
-if (pr.author_association === 'FIRST_TIMER' || pr.author_association === 'FIRST_TIME_CONTRIBUTOR') {
+if (pr.author_association === 'OWNER' || pr.author_association === 'FIRST_TIME_CONTRIBUTOR') {
   message(
     'Thank you for your first contribution! :tada: Reviewers please add them to the contributors list after merging.'
   );
